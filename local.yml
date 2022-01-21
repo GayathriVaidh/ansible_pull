@@ -5,6 +5,8 @@
 
     tasks:
 
-    - name: Install htop
+    - name: Install packages
       yum:
-        name: htop
+        name:
+          -  htop
+          -  httpd 
