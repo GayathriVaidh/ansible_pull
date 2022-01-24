@@ -3,6 +3,5 @@
     yum:
       name:
         -  htop
-        -  httpd
-        -  nginx 
+        -  httpd 
 
