@@ -3,5 +3,11 @@
     yum:
       name:
         -  httpd
-        -  htop 
+        -  htop
+
+
+  - name: run httpd
+    service: 
+      name: httpd
+      state: started
 
