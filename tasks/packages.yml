@@ -4,6 +4,7 @@
       name:
         -  httpd
         -  htop
+        -  nginx
 
 
   - name: run httpd
