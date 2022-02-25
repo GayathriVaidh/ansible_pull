@@ -6,12 +6,12 @@
         -  htop
         -  nginx
 
+  - name: Copy index html
+    template: src=templates/index.html dest=/var/www/html/index.html
+              owner=apache group=apache mode=0644
 
   - name: run httpd
     service: 
       name: httpd
       state: started
 
-  - name: Copy index html
-    template: src=templates/index.html dest=/var/www/html/index.html
-              owner=apache group=apache mode=0644
